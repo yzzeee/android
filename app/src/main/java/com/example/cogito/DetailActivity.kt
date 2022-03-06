@@ -3,6 +3,7 @@ package com.example.cogito
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class DetailActivity : AppCompatActivity() {
@@ -16,5 +17,7 @@ class DetailActivity : AppCompatActivity() {
             setResult(RESULT_OK, intent)
             finish()
         }
+        val detailActivity = findViewById<TextView>(R.id.detail_activity)
+        detailActivity.text = intent.data.toString()
     }
 }
