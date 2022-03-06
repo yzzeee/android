@@ -28,6 +28,12 @@ class MainActivity : AppCompatActivity() {
             resultLauncher.launch(intent)
         }
 
+        val goToKeyboardBtn = findViewById<Button>(R.id.go_to_keyboard)
+        goToKeyboardBtn.setOnClickListener{
+            val intent = Intent(this, KeyboardActivity::class.java)
+            startActivity(intent)
+        }
+
         val phoneNumberEditText = findViewById<EditText>(R.id.editText1)
         val callPhoneButton = findViewById<Button>(R.id.call_phone)
 

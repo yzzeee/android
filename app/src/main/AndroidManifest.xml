@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cogito">
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <queries>
-        <package android:name="com.example.cogito2"/>
+        <package android:name="com.example.cogito2" />
     </queries>
 
     <application
@@ -23,13 +24,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailActivity" android:exported="true">
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.EDIT" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <data android:scheme="http"/>
+                <data android:scheme="http" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".KeyboardActivity"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

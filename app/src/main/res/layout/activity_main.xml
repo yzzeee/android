@@ -19,6 +19,12 @@
         android:layout_height="wrap_content"
         android:text="GO TO DETAIL" />
 
+    <Button
+        android:id="@+id/go_to_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO TO KEYBOARD" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
@@ -78,4 +84,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PACKAGE TEST" />
+
 </LinearLayout>
